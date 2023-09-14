@@ -4,7 +4,7 @@ import data from '../data/data.json';
 import Item from './Item';
 const Dashboard = () => {
   const [items, setItems] = useState([]);
-  const [cart, setCart] = useState([[]]);
+  const [cart, setCart] = useState([]);
 
   const fetchData = () => {
     setItems(data);
@@ -23,9 +23,24 @@ const Dashboard = () => {
   };
 
   const removeFromCart = (item) => {
-    setCart(cart.filter((item) => item !== item));
+    if (cart.map((cartItem) => cartItem[0]).includes(item)) {
+      setCart(cart.filter((cartItem) => cartItem[0] !== item));
+    }
   };
+
+  const handleRemove = (itemName, itemAdd) => {
+    removeFromCart(itemName);
+    setItems(
+      items.map((item) =>
+        item.name === itemName
+          ? { ...item, quantity: item.quantity + itemAdd }
+          : item
+      )
+    );
+  };
+
   useEffect(() => fetchData(), []);
+
   return (
     <>
       <div>
@@ -36,16 +51,23 @@ const Dashboard = () => {
             name={item.name}
             cost={item.cost}
             pic={item.image}
+            description={item.description}
+            quantitiy={item.quantity}
             addToCart={addToCart}
+            items={items}
+            setItems={setItems}
           />
         ))}
       </div>
       <div>
+        <h1>Cart</h1>
         {cart.map((item) => (
           <div>
             <h1>{item[0]}</h1>
             <h2>Quantity: {item[1]}</h2>
-            <button onClick={() => removeFromCart(item)}>Remove</button>
+            <button onClick={() => handleRemove(item[0], item[1])}>
+              Remove
+            </button>
           </div>
         ))}
       </div>
