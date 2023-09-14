@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Apples",
+    "cost": 1.99,
+    "image": "https://www.applesfromny.com/wp-content/uploads/2020/06/SnapdragonNEW.png"
+  },
+  {
+    "id": 2,
+    "name": "Bananas",
+    "cost": 0.79,
+    "image": "https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bunch-of-bananas-67e91d5.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Milk",
+    "cost": 2.49,
+    "image": "https://cdn.britannica.com/77/200377-050-4326767F/milk-splashing-glass.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Bread",
+    "cost": 2.99,
+    "image": "https://tastesbetterfromscratch.com/wp-content/uploads/2020/03/Bread-Recipe-5-2.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Eggs",
+    "cost": 1.89,
+    "image": "https://cdn.britannica.com/94/151894-050-F72A5317/Brown-eggs.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Chicken",
+    "cost": 5.99,
+    "image": "https://assets.epicurious.com/photos/62f16ed5fe4be95d5a460eed/3:2/w_6948,h_4632,c_limit/RoastChicken_RECIPE_080420_37993.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Rice",
+    "cost": 3.49,
+    "image": "https://thewanderlustkitchen.com/wp-content/uploads/2013/12/Perfect-White-Rice-Recipe-Redo-17-2.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Pasta",
+    "cost": 1.29,
+    "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/02/05/Baked-Feta-Pasta-4_s4x3.jpg.rend.hgtvcom.616.493.suffix/1615916524567.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Tomatoes",
+    "cost": 0.99,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/1200px-Tomato_je.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Potatoes",
+    "cost": 1.49,
+    "image": "https://cdn.mos.cms.futurecdn.net/iC7HBvohbJqExqvbKcV3pP.jpg"
+  }
+]
