@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Dashboard = () => {
-  return <div>Dashboard Type beat</div>;
+  return <div>Dashboard File</div>;
 };
 
 export default Dashboard;

@@ -1,8 +1,19 @@
-# React + Vite
+# HackUTD Fall 2023 Workshop Series
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## React Portion
 
-Currently, two official plugins are available:
+Please either create a Github Codespace or clone this repository to your local machine.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+git clone https://github.com/acmutd/hackutd-fall23-workshops.git
+```
+
+We reccomend you use [Visual Studio Code](https://code.visualstudio.com/) as your text editor for this workshop. You can download it [here](https://code.visualstudio.com/).
+
+This project was made with Vite and React. To run this project, you will need to have Node.js installed. You can download it [here](https://nodejs.org/en/).
+
+To run this project, you will need to run the following commands in your terminal:
+
+```bash
+npm run dev
+```
