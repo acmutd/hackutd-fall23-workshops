@@ -1,14 +1,11 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import data from '../data/data.json';
 import Item from './Item';
-const Dashboard = () => {
-  const [items, setItems] = useState([]);
-  const [cart, setCart] = useState([]);
 
-  const fetchData = () => {
-    setItems(data);
-  };
+const Dashboard = () => {
+  const [items, setItems] = useState(data);
+  const [cart, setCart] = useState([]);
 
   const addToCart = (item) => {
     if (cart.map((cartItem) => cartItem[0]).includes(item)) {
@@ -39,15 +36,12 @@ const Dashboard = () => {
     );
   };
 
-  useEffect(() => fetchData(), []);
-
   return (
     <>
       <div>
         {items.map((item) => (
           <Item
             key={item.id}
-            id={item.id}
             name={item.name}
             cost={item.cost}
             pic={item.image}
