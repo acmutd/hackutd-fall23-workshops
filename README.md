@@ -6,6 +6,7 @@ Please either create a Github Codespace or clone this repository to your local m
 
 ```bash
 git clone https://github.com/acmutd/hackutd-fall23-workshops.git
+npm install
 ```
 
 We reccomend you use [Visual Studio Code](https://code.visualstudio.com/) as your text editor for this workshop. You can download it [here](https://code.visualstudio.com/).
