@@ -9,20 +9,18 @@ const Dashboard = () => {
   useEffect(() => setItems(data), []);
 
   return (
-    <>
-      <div>
-        {items.map((item) => (
-          <Item
-            key={item.id}
-            name={item.name}
-            cost={item.cost}
-            pic={item.image}
-            description={item.description}
-            quantitiy={item.quantity}
-          />
-        ))}
-      </div>
-    </>
+    <div>
+      {items.map((item) => (
+        <Item
+          key={item.id}
+          name={item.name}
+          cost={item.cost}
+          pic={item.image}
+          description={item.description}
+          quantitiy={item.quantity}
+        />
+      ))}
+    </div>
   );
 };
 
