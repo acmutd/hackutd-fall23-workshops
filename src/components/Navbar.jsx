@@ -5,7 +5,6 @@ const Navbar = () => {
     <>
       <div className='relative'>
         <div className='text-4xl'>My Shopping Website</div>
-        <div className=''></div>
       </div>
     </>
   );
