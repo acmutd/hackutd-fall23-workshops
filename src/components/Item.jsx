@@ -14,19 +14,28 @@ const Item = (props) => {
   };
 
   return (
-    <>
-      <h1 className='text-3xl'>{props.name}</h1>
-      <h2 className='text-2xl'>{props.cost}</h2>
-      <img className='' src={props.pic} alt={props.name} />
-      <h3>{props.quantitiy}</h3>
-      <p>{props.description}</p>
+    <div className="relative bg-white border h-fit w-2/5 justify-center overflow-hidden rounded-lg">
+      
+      <img className='shrink-0  w-full h-[200px] object-cover object-top relative' src={props.pic} alt={props.name} />
+      <div className="p-6">
+      <h1 className='text-lg font-bold'>{props.name}</h1>
+
+      <div className='flex  justify-between'>
+      <h2 className='text-sm font-semibold'>${props.cost}</h2>
+      <h2 className='text-sm text-right font-light py-2'>{props.quantitiy} left</h2>
+      </div>
+      
+
       <button
         onClick={() => handleClick(props.name, props.quantitiy)}
-        className=''
+        className='bg-lime-200 w-1/6 h-2/5 font-bold rounded-md block float-right'
       >
-        Add to Cart
+         BUY
       </button>
-    </>
+        
+        <br></br>
+      </div>
+    </div>
   );
 };
 

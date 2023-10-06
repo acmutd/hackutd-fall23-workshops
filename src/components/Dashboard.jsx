@@ -37,15 +37,14 @@ const Dashboard = () => {
   };
 
   return (
-    <>
-      <div>
+    <div className='bg-secondary'>
+      <div className="flex flex-wrap p-12 gap-12">
         {items.map((item) => (
           <Item
             key={item.id}
             name={item.name}
             cost={item.cost}
             pic={item.image}
-            description={item.description}
             quantitiy={item.quantity}
             addToCart={addToCart}
             items={items}
@@ -65,7 +64,7 @@ const Dashboard = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
