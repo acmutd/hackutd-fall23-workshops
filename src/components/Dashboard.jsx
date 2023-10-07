@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   return (
     <div className="bg-secondary">
-      <div className="flex flex-wrap p-12 gap-12 grid sm:grid-cols-2 lg:grid-cols-4">
+      <div className="p-12 gap-12 grid sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item) => (
           <Item
             key={item.id}
