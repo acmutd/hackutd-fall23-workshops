@@ -19,22 +19,7 @@ const Dashboard = () => {
     }
   };
 
-  const removeFromCart = (item) => {
-    if (cart.map((cartItem) => cartItem[0]).includes(item)) {
-      setCart(cart.filter((cartItem) => cartItem[0] !== item));
-    }
-  };
 
-  const handleRemove = (itemName, itemAdd) => {
-    removeFromCart(itemName);
-    setItems(
-      items.map((item) =>
-        item.name === itemName
-          ? { ...item, quantity: item.quantity + itemAdd }
-          : item
-      )
-    );
-  };
 
   return (
     <div className="bg-secondary">
@@ -58,9 +43,6 @@ const Dashboard = () => {
           <div>
             <h1>{item[0]}</h1>
             <h2>Quantity: {item[1]}</h2>
-            <button onClick={() => handleRemove(item[0], item[1])}>
-              Remove
-            </button>
           </div>
         ))}
       </div>
