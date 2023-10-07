@@ -14,9 +14,9 @@ const Item = (props) => {
   };
 
   return (
-    <div className="relative bg-white border h-fit justify-center overflow-hidden rounded-lg">
+    <div className="relative bg-white border shadow-lg h-fit justify-center overflow-hidden rounded-lg">
       <img
-        className="shrink-0  w-full h-[200px] object-cover object-top relative"
+        className="shrink-0 w-full h-[200px] object-cover object-top relative hover:scale-110 transition ease-in-out duration-500"
         src={props.pic}
         alt={props.name}
       />
@@ -32,7 +32,7 @@ const Item = (props) => {
 
         <button
           onClick={() => handleClick(props.name, props.quantitiy)}
-          className="bg-lime-200 w-full h-2/5 font-bold rounded-md block float-right"
+          className="bg-lime-200 w-full h-2/5 font-bold rounded-md block float-right hover:bg-lime-500 hover:text-white transition-colors ease-linear duration-300"
         >
           BUY
         </button>
