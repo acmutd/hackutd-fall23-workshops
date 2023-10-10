@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav class="max-w-screen bg-white z-10 shadow-xl sticky top-0 border-gray-200 ">
       <div class="flex flex-wrap items-center justify-between mx-auto p-4">
@@ -15,7 +15,7 @@ const Navbar = () => {
 
         >
           <img className="w-10 h-10 mr-2" src="https://icons.veryicon.com/png/o/object/material_design/shopping-cart-57.png" alt="" />
-          <h1 className="font-bold text-black">12</h1>
+          <h1 className="font-bold text-black">{props.counter}</h1>
         </div>
       </div>
     </nav>

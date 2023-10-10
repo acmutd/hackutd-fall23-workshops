@@ -3,23 +3,8 @@ import { useState } from 'react';
 import data from '../data/data.json';
 import Item from './Item';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
   const [items, setItems] = useState(data);
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (item) => {
-    if (cart.map((cartItem) => cartItem[0]).includes(item)) {
-      setCart(
-        cart.map((cartItem) =>
-          cartItem[0] === item ? [cartItem[0], cartItem[1] + 1] : cartItem
-        )
-      );
-    } else {
-      setCart([...cart, [item, 1]]);
-    }
-  };
-
-
 
   return (
     <div className="bg-secondary">
@@ -31,19 +16,10 @@ const Dashboard = () => {
             cost={item.cost}
             pic={item.image}
             quantitiy={item.quantity}
-            addToCart={addToCart}
+            addToCart={props.setCounter}
             items={items}
             setItems={setItems}
           />
-        ))}
-      </div>
-      <div>
-        <h1>Cart</h1>
-        {cart.map((item) => (
-          <div>
-            <h1>{item[0]}</h1>
-            <h2>Quantity: {item[1]}</h2>
-          </div>
         ))}
       </div>
     </div>
