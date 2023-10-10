@@ -14,19 +14,32 @@ const Item = (props) => {
   };
 
   return (
-    <>
-      <h1 className='text-3xl'>{props.name}</h1>
-      <h2 className='text-2xl'>{props.cost}</h2>
-      <img className='' src={props.pic} alt={props.name} />
-      <h3>{props.quantitiy}</h3>
-      <p>{props.description}</p>
-      <button
-        onClick={() => handleClick(props.name, props.quantitiy)}
-        className=''
-      >
-        Add to Cart
-      </button>
-    </>
+    <div className="">
+      <img
+        className=""
+        src={props.pic}
+        alt={props.name}
+      />
+      <div className="">
+        <h1 className="">{props.name}</h1>
+
+        <div className="">
+          <h2 className="">${props.cost}</h2>
+          <h2 className="">
+            {props.quantitiy} left
+          </h2>
+        </div>
+
+        <button
+          onClick={() => handleClick(props.name, props.quantitiy)}
+          className=""
+        >
+          add to cart
+        </button>
+
+        <br></br>
+      </div>
+    </div>
   );
 };
 
